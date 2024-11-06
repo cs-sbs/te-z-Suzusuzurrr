@@ -9,7 +9,12 @@ public class NumberFeature {
         Scanner in = new Scanner(System.in);
         inputNumber = in.nextInt();
         // 你的代码逻辑
-
+        for (int i = 1; inputNumber>0; ++i) {
+            if(inputNumber%2==i%2) {
+                result+=Math.pow(2,i-1);
+            }
+            inputNumber=inputNumber/10;
+        }
         System.out.println(result);
     }
 }
